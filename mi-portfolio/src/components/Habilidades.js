@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaJsSquare, FaLinux, FaCode } from 'react-icons/fa';
+import { FaReact, FaJsSquare, FaLinux, FaCode, }from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './Habilidades.css';
 
