@@ -1,0 +1,88 @@
+/* src/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header__logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: default;
+  user-select: none;
+}
+
+.header__nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header__link {
+  position: relative;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.header__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.header__link:hover {
+  color: var(--primary-color);
+}
+
+.header__link:hover::after {
+  width: 100%;
+}
+
+/* Botón tema */
+.theme-toggle {
+  margin-left: 20px;
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #2563eb;
+}
+
+/* Variables para tema claro y oscuro */
+:root {
+  --bg-color: #111827;
+  --primary-color: #60a5fa;
+  --text-color: #cbd5e1;
+}
+
+[data-theme='light'] {
+  --bg-color: #f3f4f6;
+  --primary-color: #2563eb;
+  --text-color: #1f2937;
+}

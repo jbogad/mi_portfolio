@@ -1,0 +1,44 @@
+.proyectos {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.proyectos h2 {
+  text-align: center;
+  color: #00aaff;
+  margin-bottom: 2rem;
+}
+
+.proyectos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.proyecto-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgb(0 0 0 / 0.15);
+}
+
+.proyecto-card h3 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+.proyecto-card p {
+  margin-bottom: 0;
+}

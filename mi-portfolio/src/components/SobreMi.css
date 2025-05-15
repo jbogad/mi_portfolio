@@ -1,0 +1,17 @@
+.sobre-mi {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.sobre-mi h2 {
+  text-align: center;
+  color: #00aaff;
+  margin-bottom: 1rem;
+}
